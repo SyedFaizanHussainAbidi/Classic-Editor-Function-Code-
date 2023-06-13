@@ -1,0 +1,5 @@
+function switch_to_classic_editor() {
+  add_filter('use_block_editor_for_post', '__return_false', 10);
+}
+
+add_action('init', 'switch_to_classic_editor');
